@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="renato-roca-dev">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagem/x-icon" href="img/title_icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Calorius</title>
+</head>
+<body>
+    <div class="container">
+        <main class="main__content">
+            <header>
+                <h1>Calorius</h1>
+            </header>
+            <form id="form" onsubmit="return false">
+                <div class="form__group">
+                    <label for="weight">Peso atual:</label>
+                    <input type="number" id="weight" placeholder="Ex: 72,5" step="0.01" required min="20" max="300" >
+                    <p>kg</p>
+                </div>
+                <div class="form__group">
+                    <label for="height">Altura:</label>
+                    <input type="number" id="height" placeholder="Ex: 160" step="0.01" required min="1" max="240"> 
+                    <p>cm</p>
+                </div>
+                <div class="form__group">
+                    <label for="age">Idade:</label>
+                    <input type="number" id="age" placeholder="Ex: 25" step="1" required min="1" max="120">
+                    <p>anos</p>
+                </div>
+                <div class="form__group">
+                    <label for="gender">Sexo:</label>
+                    <select id="gender" required>
+                        <option value="" selected></option>
+                        <option value="male">Masculino</option>
+                        <option value="female">Feminino</option>
+                    </select>
+                  </div>
+                <div class="form__group">
+                    <label for="activity__level">Nível de atividade física:</label>
+                    <select id="activity__level" required >
+                        <option value="" selected></option>
+                        <option value="1.2">Sedentário</option>
+                        <option value="1.375">Pouca atividade</option>
+                        <option value="1.55">Atividade moderada</option>
+                        <option value="1.725">Atividade intensa</option>
+                        <option value="1.9">Atividade muito intensa</option>
+                    </select>
+                </div>
+                <div class="form__group">
+                    <button type="submit" id="result__button"  >Calcular!</button>
+                </div>
+                <div class="result__content" >
+                    <ul>
+                        <li>
+                         <p id="outBasal"></p>
+                        </li>
+                        <li>
+                         <p id="outMaintenance"></p>
+                        </li>
+                        <li>
+                         <p id="outGainWeight"></p>
+                        </li>
+                        <li>
+                         <p id="outLoseWeight"></p>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </main>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>

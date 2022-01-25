@@ -1,0 +1,193 @@
+/* CONTAINER | CORPO | PRINCIPAL */
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: white;
+    font-family: 'Rubik', sans-serif;;
+}
+body{
+    background-color: rgb(19, 19, 19);
+}
+.container{
+    background-color: rgb(25, 25, 25);
+    height: 110vh;
+    width: 100%;
+    max-width: 800px;
+    max-height: 110vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-left: 1px solid #D81159;
+    border-right: 1px solid #D81159;
+}
+.main__content{
+    margin-top: 30px;
+}
+header h1{
+    font-size: 26px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    color: #D81159;
+}
+
+/* FORMULARIO */
+#form{
+}
+.form__group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 465px;
+}
+.form__group p{
+    display: flex;
+    justify-content: flex-end;
+}
+.form__group label {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.form__group input{
+    background: rgb(8, 8, 8);
+    width: 450px;
+    height: 50px;
+    border: none;
+    color: white;
+    outline: none;
+    border-bottom: 1px solid #73D2DE;
+    padding: 0px 8px;
+}
+.form__group select {
+  background: rgb(8, 8, 8);
+  width: 465px;
+  height: 50px;
+  border: none;
+  color: white;
+  outline: none;
+  border-bottom: 1px solid #73D2DE;
+  padding: 0px 8px;
+}
+.form__group option{}
+.form__group button {
+    background-color: rgb(8, 8, 8);
+    color: #D81159;
+    border: none;
+    height: 45px;
+    cursor: pointer;
+}
+.form__group button:hover{
+    background-color: #D81159;
+    color: white;
+}
+
+
+/* RESULTADO */
+.result__content {
+    width: 435px;
+    background-color: rgb(19, 19, 19);
+    border-radius: 5px;
+    padding: 15px;
+}
+.result__content ul {
+    list-style: none;
+}
+.result__content ul li {
+    border-bottom: 1px solid #73D2DE;
+    line-height: 25px;
+}
+.result__content ul li p {
+    color: white;
+}
+.result__content ul li strong {
+    color: #D81159;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 500px) {
+    body{
+        background-color: rgb(25, 25, 25);
+    }
+    .container{
+        border: none;
+    }
+    .form__group{
+        width: 270px;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    .form__group input{
+        width: 253px;
+    }
+    .form__group select{
+        width: 270px;
+    }
+    .form__group button{
+        width: 270px;
+    }
+    .form__group label{
+        width: 150px;
+    }
+    .form__group p{
+        display: none;
+    }
+    .result__content{
+        width: 240px;
+        margin-top: 18px;
+    }
+}
+@media (max-width:1280px) and (max-height: 800px){
+    .container{
+        height: 130vh;
+        max-height: 130vh;
+    }
+}
+@media (max-width: 1024px) and (max-height: 600px){
+    .container{
+        height: 170vh;
+        max-height: 170vh;
+    }
+}
+@media (max-width: 540px) and (max-height: 720px) {
+    .container{
+        height: 140vh;
+        max-height: 140vh;
+    }
+}
+@media (min-width: 820px) and (min-height: 1180px) {
+    .container{
+        height: 100vh;
+        max-height: 100vh;
+    }
+    .main__content{
+        margin-top: 100px;
+    }
+}
+@media (min-width: 768px) and (min-height: 1024px) {
+    .container{
+        height: 100vh;
+        max-height: 100vh;
+    }
+    .main__content{
+        margin-top: 30px;
+    }
+}
+@media (min-width: 912px) and (min-height: 1368px) {
+    .container{
+        height: 100vh;
+        max-height: 100vh;
+    }
+    .main__content{
+        margin-top: 150px;
+    }
+}
+@media (min-width: 912px) and (min-height: 1368px) {
+    .container{
+        height: 100vh;
+        max-height: 100vh;
+    }
+    .main__content{
+        margin-top: 150px;
+    }
+}
